@@ -1,5 +1,5 @@
 {
-    "name":"Kraken Webstie",
+    "name":"Kraken-Webstie",
     "version":"0.0.1",
     "description":"test de API via website",
     "main":"index.js",
@@ -15,6 +15,4 @@
         "handlebars":"4.0.5",
         "wreck":"7.0.0"
     }
-
-
 }
