@@ -3,7 +3,35 @@
         "connections":[
             {
                 "port":4000,
-                "host":"localhost"
+                "host":"localhost",
+                "labels":["web"]
+            }
+        ],
+        "registrations":[
+            {
+                "plugin":"vision",
+                "options":{
+                    "select":["web"]
+                }
+            },
+            {
+                "plugin":"inert",
+                "options":{
+                    "select":["web"]
+                }
+            },
+            {
+                "plugin":"visionary",
+                "options": {
+                    "engines": { "html": "handlebars" },
+                    "path": "./views",
+                    "layoutPath": "./views/layout",
+                    "layout": true,
+                    "isCached": false,
+                    "helpersPath": "./views/helpers",
+                    "partialsPath": "./views/partials",
+                    "select":["web"]
+                }
             }
         ]
     }
