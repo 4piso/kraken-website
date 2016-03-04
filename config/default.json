@@ -21,17 +21,22 @@
                 }
             },
             {
-                "plugin":"visionary",
+                "plugin": {
+                    "register": "visionary",
+                    "options": {
+                        "engines": { "html": "handlebars" },
+                        "path": "./views",
+                        "layoutPath": "./views/layout",
+                        "layout": true,
+                        "isCached": false,
+                        "helpersPath": "./views/helpers",
+                        "partialsPath": "./views/partials"
+                    }
+                },
                 "options": {
-                    "engines": { "html": "handlebars" },
-                    "path": "./views",
-                    "layoutPath": "./views/layout",
-                    "layout": true,
-                    "isCached": false,
-                    "helpersPath": "./views/helpers",
-                    "partialsPath": "./views/partials",
                     "select":["web"]
                 }
+
             }
         ]
     }
