@@ -21,23 +21,19 @@
                 }
             },
             {
-                "plugin": {
-                    "register": "visionary",
-                    "options": {
-                        "engines": { "html": "handlebars" },
-                        "path": "./views",
-                        "layoutPath": "./views/layout",
-                        "layout": true,
-                        "isCached": false,
-                        "helpersPath": "./views/helpers",
-                        "partialsPath": "./views/partials"
-                    }
-                },
-                "options": {
-                    "select":["web"]
+                "plugin":"bell",
+                "options":{
+                    "select":"web"
+                }
+            },
+            {
+                "plugin":"./routes",
+                "options":{
+                    "select":"web"
                 }
 
             }
+
         ]
     }
 }
