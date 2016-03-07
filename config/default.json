@@ -1,35 +1,35 @@
 {
-    "manifest":{
-        "connections":[
+    "manifest": {
+        "connections": [
             {
-                "port":4000,
-                "host":"localhost",
-                "labels":["web"]
+                "port": 4000,
+                "host": "localhost",
+                "labels": ["web"]
             }
         ],
-        "registrations":[
+        "registrations": [
             {
-                "plugin":"vision",
-                "options":{
-                    "select":["web"]
+                "plugin": "vision",
+                "options": {
+                    "select": ["web"]
                 }
             },
             {
-                "plugin":"inert",
-                "options":{
-                    "select":["web"]
+                "plugin": "inert",
+                "options": {
+                    "select": ["web"]
                 }
             },
             {
-                "plugin":"bell",
-                "options":{
-                    "select":"web"
+                "plugin": "bell",
+                "options": {
+                    "select": ["web"]
                 }
             },
             {
-                "plugin":"./routes",
-                "options":{
-                    "select":"web"
+                "plugin": "./routes",
+                "options": {
+                    "select": ["web"]
                 }
 
             }
