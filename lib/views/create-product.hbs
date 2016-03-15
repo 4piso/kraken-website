@@ -1,0 +1,36 @@
+<div id="create-product-form">
+
+    <form class="form-horizontal" action="/create-product" method="post">
+
+        <div class="form-group">
+            <select class="form-control" name="service_id">
+                <option value="0">Select a Category</option>
+                {{#each category}}
+                    <option value="{{_id}}">{{name}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="name" >Name</label>
+            <input type="text" class="form-control" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="name">Description</label>
+            <textarea class="form-control"  name="description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="discount">Discount</label>
+            <input type="number" class="form-control" name="discount" />
+        </div>
+        <div class="form-group">
+            <label for="prices">Price</label>
+            <input type="number" class="form-control" name="price" />
+        </div>
+
+        <div class="form-group">
+			<input type="submit" class="btn btn-default" value="Submit">
+		</div>
+
+    </form>
+</div>
