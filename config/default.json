@@ -27,6 +27,12 @@
                 }
             },
             {
+                "plugin":"yar",
+                "options":{
+                    "select":["web"]
+                }
+            },
+            {
                 "plugin": "./routes",
                 "options": {
                     "select": ["web"]

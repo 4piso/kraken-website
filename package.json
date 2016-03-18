@@ -19,7 +19,8 @@
     "joi": "8.0.2",
     "vision": "4.0.1",
     "visionary": "4.0.0",
-    "wreck": "7.0.0"
+    "wreck": "7.0.0",
+    "yar":"7.0.0"
   },
   "scripts": {
     "test": "lab -L -r html -o test/coverage.html"
