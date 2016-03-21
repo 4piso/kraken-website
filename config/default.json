@@ -27,7 +27,16 @@
                 }
             },
             {
-                "plugin":"yar",
+                "plugin": {
+                    "register": "yar",
+                    "options": {
+                        "storeBlank": false,
+                        "cookieOptions": {
+                            "password": "the-password-must-be-at-least-32-characters-long",
+                            "isSecure": false
+                        }
+                    }
+                },
                 "options":{
                     "select":["web"]
                 }
