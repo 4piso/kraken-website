@@ -42,6 +42,19 @@
                 }
             },
             {
+                "plugin":{
+                    "register":"hapi-auth-cookie",
+                    "options":{
+                        "password":"supersecretpassword",
+                        "cookie":"kraken",
+                        "isSecure":false
+                    }
+                },
+                "options":{
+                    "select":["web"]
+                }
+            },
+            {
                 "plugin": "./routes",
                 "options": {
                     "select": ["web"]
