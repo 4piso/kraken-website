@@ -18,6 +18,8 @@ Server.init(Config.manifest, internals.options, (err, server) => {
     // Server connections
     const web = server.select('web');
 
+    server.app = Config.app;
+
     // Logging started server
     console.log('WEB server started at: ' + web.info.uri);
 });

@@ -1,4 +1,9 @@
 {
+    "app": {
+        "urls": {
+            "api": "http://localhost:8000"
+        }
+    },
     "manifest": {
         "connections": [
             {
@@ -50,6 +55,12 @@
                         "isSecure":false
                     }
                 },
+                "options":{
+                    "select":["web"]
+                }
+            },
+            {
+                "plugin": "./plugins/customAuth",
                 "options":{
                     "select":["web"]
                 }
