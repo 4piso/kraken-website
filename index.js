@@ -21,5 +21,6 @@ Server.init(Config.manifest, internals.options, (err, server) => {
     server.app = Config.app;
 
     // Logging started server
-    console.log('WEB server started at: ' + web.info.uri);
+    console.log(`WEB server started at: ${web.info.uri}`);
+
 });

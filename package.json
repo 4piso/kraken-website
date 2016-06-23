@@ -10,6 +10,7 @@
   "author": "Josue Rodriguez, Fernando Mejia, Luis Matute",
   "dependencies": {
     "bell": "7.1.0",
+    "boom": "^3.2.2",
     "getconfig": "^2.2.0",
     "glue": "3.2.0",
     "handlebars": "4.0.5",
