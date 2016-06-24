@@ -1,1 +1,24 @@
-<h1>Fill the form</h1>
+<div class="thumbnail">
+    <img src="http://placehold.it/800x500" style="height:250px;" alt="">
+    <div class="caption">
+        <div class="product-detail">
+            <h3 class="product-summary-name">Producto: {{product.name}}<h3>
+            <h3 class="product-summary-name">Description: {{product.description}}<h3>
+            <h5 class="product-summary-name">Price: {{product.price}}<h5>
+            <h5 class="product-summary-name">Reviews: {{product.review}}<h5>
+            <h5>Descuento: {{product.discount}}</h5>
+            <h5>Horarios : {{product.business_info}}</h5>
+        </div>
+
+        <h2>Selecione su fecha</h2>
+
+        <form name="rsvp" id="rsvp" method="post">
+            <p>fecha: <input type="text" id="datepicker" name="datepicker"></p>
+            <p>Hora : <input type="text" id="timepicker" name="timepicker" /></p>
+
+            <input type="submit" />
+        </form>
+        <script src="/public/js/rsvp-calendar.js"></script>
+
+    </div>
+</div>
